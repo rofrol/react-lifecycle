@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<style>
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 800px;
+    margin-bottom: 30px;
+}
+
+.span2 {
+    grid-column-start: span 2;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 4px;
+    font-family: 'UbuntuMono Nerd Font Mono', monospace;
+}
+
+</style>
+
+<div class="wrapper">
+    <div>Mounting</div>
+    <div>Updating</div>
+    <div class="item">constructor()</div>
+    <div></div>
+    <div class="item">static getDerivedStateFromProps()</div>
+    <div class="item">static getDerivedStateFromProps()</div>
+    <div></div>
+    <div class="item">shouldComponentUpdate()</div>
+    <div class="item">render()</div>
+    <div class="item">render()</div>
+    <div></div>
+    <div class="item">getSnapshotBeforeUpdate()</div>
+    <div class="item">componentDidMount()</div>
+    <div class="item">componentDidUpdate()</div>
+</div>
+
+<a href="https://reactjs.org/docs/react-component.html#the-component-lifecycle">https://reactjs.org/docs/react-component.html#the-component-lifecycle</a>
